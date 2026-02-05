@@ -11,6 +11,6 @@ export async function createDesk(payload) {
 }
 
 export async function updateDesk(deskId, payload) {
-  const res = await http.put(`/api/desks/${deskId}`, payload)
+  const res = await http.put(`/api/desks/${deskId}/polygon`, payload)
   return res.data
 }

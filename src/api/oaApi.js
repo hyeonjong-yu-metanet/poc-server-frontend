@@ -11,6 +11,6 @@ export async function createOa(payload) {
 }
 
 export async function updateOa(oaId, payload) {
-  const res = await http.put(`/api/oas/${oaId}`, payload)
+  const res = await http.put(`/api/oas/${oaId}/point`, payload)
   return res.data
 }

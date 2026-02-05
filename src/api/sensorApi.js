@@ -11,6 +11,6 @@ export async function createSensor(payload) {
 }
 
 export async function updateSensor(sensorId, payload) {
-  const res = await http.put(`/api/sensors/${sensorId}`, payload)
+  const res = await http.put(`/api/sensors/${sensorId}/point`, payload)
   return res.data
 }
